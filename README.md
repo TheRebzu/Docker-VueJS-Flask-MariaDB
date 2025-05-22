@@ -80,11 +80,3 @@ docker build -t rebzu/flask-app -f Dockerfile.flask .
 ```bash
 docker build -t rebzu/vuejs-app -f Dockerfile.vuejs .
 ```
-
-## Pousser les images sur DockerHub
-
-```bash
-docker push rebzu/mariadb-server
-docker push rebzu/flask-app
-docker push rebzu/vuejs-app
-``` 
