@@ -2,6 +2,8 @@
 
 Ce projet consiste en la conteneurisation d'une application full stack utilisant Vue.js pour le front-end, Flask pour le back-end, et MariaDB pour la base de données.
 
+Code source disponible sur GitHub : [TheRebzu/Docker-VueJS-Flask-MariaDB](https://github.com/TheRebzu/Docker-VueJS-Flask-MariaDB)
+
 ## Images Docker
 
 Les images Docker sont disponibles sur DockerHub aux URLs suivantes :
