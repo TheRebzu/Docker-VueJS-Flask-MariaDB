@@ -1,0 +1,22 @@
+FROM python:3.9-slim
+
+WORKDIR /app
+
+# Copier les fichiers de l'application
+COPY back/app.py .
+COPY back/requirements.txt .
+
+# Installer les dépendances
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Variables d'environnement pour la connexion à la base de données
+ENV DB_USER=guestuser
+ENV DB_PASSWORD=guestpassword
+ENV DB_HOST=mariadb-server
+ENV DB_NAME=guestbook
+
+# Exposer le port 5000
+EXPOSE 5000
+
+# Lancer l'application Flask
+CMD ["python", "app.py"] 
