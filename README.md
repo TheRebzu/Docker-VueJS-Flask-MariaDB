@@ -61,22 +61,3 @@ curl -X GET http://localhost:5000/api/messages
 ```
 
 Pour accéder à l'interface web, ouvrez un navigateur et accédez à `http://localhost`.
-
-## Construction des images Docker
-
-Si vous souhaitez construire les images Docker vous-même, utilisez les commandes suivantes :
-
-### MariaDB
-```bash
-docker build -t rebzu/mariadb-server -f Dockerfile.mariadb .
-```
-
-### Flask
-```bash
-docker build -t rebzu/flask-app -f Dockerfile.flask .
-```
-
-### Vue.js
-```bash
-docker build -t rebzu/vuejs-app -f Dockerfile.vuejs .
-```
